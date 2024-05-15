@@ -1,12 +1,13 @@
+import {Link} from 'react-router-dom'
 
+function StarShipCard({id, name}) {
 
-function StarShipCard({name, capacity, consumables}) {
   return (
+    <Link to={`/${id}`} >
     <div className='card'>
       <h2>{name}</h2>
-      <p>Cargo Capacity: {capacity}</p>
-      <p>Consumables: {consumables}</p>
     </div>
+    </Link>
   )
 }
 

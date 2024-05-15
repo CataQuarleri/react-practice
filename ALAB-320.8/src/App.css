@@ -52,8 +52,12 @@
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 10px 10px;
   cursor: pointer;
+}
+
+.pagBtn:disabled {
+  background-color: grey
 }
 
 @keyframes logo-spin {
