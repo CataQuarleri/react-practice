@@ -1,9 +1,8 @@
 import axios from 'axios'
-export default async function getAllStarships() {
+export default async function getAllStarships(currentPage = 1) {
     try {
-        let response = await axios.get('https://swapi.dev/api/starships/')
+        let response = await axios.get(`https://swapi.dev/api/starships/?page=${currentPage}`)
         let starships = response.data.results
-        console.log("starships", starships)
         return starships
     } catch (error) {
         console.log("ERROR", error)

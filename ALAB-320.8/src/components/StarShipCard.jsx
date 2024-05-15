@@ -1,9 +1,11 @@
 
 
-function StarShipCard({name}) {
+function StarShipCard({name, capacity, consumables}) {
   return (
     <div className='card'>
-      <p>{name}</p>
+      <h2>{name}</h2>
+      <p>Cargo Capacity: {capacity}</p>
+      <p>Consumables: {consumables}</p>
     </div>
   )
 }
